@@ -490,6 +490,7 @@ GameObject:
   - component: {fileID: 393294396}
   - component: {fileID: 393294395}
   - component: {fileID: 393294397}
+  - component: {fileID: 393294398}
   m_Layer: 0
   m_Name: player1
   m_TagString: Untagged
@@ -610,9 +611,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 393294392}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cba9b8dc7c50f3741bb888b1dd463646, type: 3}
+  m_Script: {fileID: 0}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &393294398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 393294392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07dc80e6667a4fb468734830cff920ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedVertical: 3.5
+  speedHorizontal: 4
+  pictureUP: {fileID: 0}
+  pictureMiddle: {fileID: 0}
+  pictureDown: {fileID: 0}
 --- !u!1 &545961791
 GameObject:
   m_ObjectHideFlags: 0
@@ -1303,6 +1321,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70060283584aa494b809030a407fa683, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 3.5
+  jump: 7.5
+  nameplayer: Foxy
+  isPass: 0
+  hasWeapon: 1
+  hp: 999
+  time: 10.5
+  level: 10
+  walkSpeed: 3.5
+  isOpen: 0
+  countBoomb: 7
 --- !u!4 &928479251
 Transform:
   m_ObjectHideFlags: 0
@@ -2082,6 +2111,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1599237642}
   - component: {fileID: 1599237641}
+  - component: {fileID: 1599237643}
   m_Layer: 0
   m_Name: background
   m_TagString: Untagged
@@ -2156,6 +2186,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1599237643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1599237640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af0c7e31531627a4bbf7c466fa92e0ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: -3.5
 --- !u!1 &1729184705
 GameObject:
   m_ObjectHideFlags: 0
@@ -2192,6 +2235,34 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1767866673 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6795995812502382865, guid: 8a265211c383aa541ab8f6f2e29e8747, type: 3}
+  m_PrefabInstance: {fileID: 6795995811898514518}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1767866679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1767866673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70060283584aa494b809030a407fa683, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 3.5
+  jump: 7.5
+  nameplayer: CRAB
+  isPass: 0
+  hasWeapon: 1
+  hp: 999
+  time: 10.5
+  level: 10
+  walkSpeed: 3.5
+  isOpen: 0
+  countBoomb: 7
 --- !u!1 &1802027173
 GameObject:
   m_ObjectHideFlags: 0
