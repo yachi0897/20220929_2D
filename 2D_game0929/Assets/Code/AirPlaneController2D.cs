@@ -22,9 +22,22 @@ namespace FOX
 
         private void Update()
         {
+
+            // 上下 WS Vertical
+            // 左右 AD Horizontal
+
+            // 上 W +1
+            // 下 S -1
+            // 沒按 0
+            float v = Input.GetAxis("Vertical");
+            // 右 D +1
+            // 左 A-1
+            // 沒按 0 
+            float h = Input.GetAxis("Horizontal");
+
             transform.Translate(
-                speedHorizontal * Time.deltaTime,
-                speedVertical * Time.deltaTime, 0);
+                speedHorizontal * Time.deltaTime*h,
+                speedVertical * Time.deltaTime*v, 0);
         }
 
     }
