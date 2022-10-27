@@ -20,6 +20,13 @@ namespace FOX
         [SerializeField]
         private Sprite pictureDown;
 
+        private void Update()
+        {
+            transform.Translate(
+                speedHorizontal * Time.deltaTime,
+                speedVertical * Time.deltaTime, 0);
+        }
+
     }
 
 }
