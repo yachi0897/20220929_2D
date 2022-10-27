@@ -1,16 +1,16 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 
 namespace   FOX
 {
     /// <summary>
-    /// µo®g¨t²Î°ò©³Ãş§O
-    /// ¥Í¦¨¤l¼u
+    /// ç™¼å°„ç³»çµ±åŸºåº•é¡åˆ¥
+    /// ç”Ÿæˆå­å½ˆ
     /// </summary>
     public class FireSystemBase : MonoBehaviour
     {
-        [SerializeField, Header("¤l¼u¹w¸mª«")]
+        [SerializeField, Header("å­å½ˆé ç½®ç‰©")]
         private GameObject prefabBullet;
-        [SerializeField, Header("¤l¼u¥Í¦¨ÂI")]
+        [SerializeField, Header("å­å½ˆç”Ÿæˆé»")]
         private Transform pointSpawn;
     }
 }
