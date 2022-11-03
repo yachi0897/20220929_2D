@@ -12,6 +12,16 @@ namespace   FOX
         private GameObject prefabBullet;
         [SerializeField, Header("子彈生成點")]
         private Transform pointSpawn;
+
+        //自訂方法
+        //生成子彈
+        //protected 1
+           protected void SpawnBullet()
+        {
+            //實例化(物件、座標、角度)
+            //生成 子彈預置物 角度與座標跟子彈生成點相同
+            Instantiate(prefabBullet, pointSpawn.position, pointSpawn.rotation);
+        }
     }
 }
 
