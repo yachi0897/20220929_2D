@@ -8,12 +8,12 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - player1
   - Water
   - UI
-  - 
-  - 
-  - 
+  - ememy
+  - shoot1
+  - "\u5B50\u5F48\u6575\u6A5F"
   - 
   - 
   - 
