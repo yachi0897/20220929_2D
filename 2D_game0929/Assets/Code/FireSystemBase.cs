@@ -15,7 +15,7 @@ namespace   FOX
 
         //自訂方法
         //生成子彈
-        //protected 1
+        //protected 
            protected void SpawnBullet()
         {
             //實例化(物件、座標、角度)
