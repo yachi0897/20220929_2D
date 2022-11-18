@@ -1,35 +1,35 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 namespace FOX
 {
     /// <summary>
-    /// ¶Ë®`¨t²Î
+    /// å‚·å®³ç³»çµ±
     /// </summary>
     public class DamageSystem : MonoBehaviour
     {
-        [SerializeField, Header("·|³y¦¨¶Ë®`ªº¥Ø¼Ğ")]
+        [SerializeField, Header("æœƒé€ æˆå‚·å®³çš„ç›®æ¨™")]
         private string nameTarget;
-        [SerializeField, Header("Ãz¬µ¹w¸mª«")]
+        [SerializeField, Header("çˆ†ç‚¸é ç½®ç‰©")]
         private GameObject prefabExplosion;
 
-        //¸I¼²¶}©l¨Æ¥ó ¤@¦¸
+        //ç¢°æ’é–‹å§‹äº‹ä»¶ ä¸€æ¬¡
         private void OnCollisionEnter2D(Collision2D collision)
         {
-            //print("¸I¼²:" +collision.gameObject);
-            //¦pªG ¸I¨ìª«¥óªº¦WºÙ ¥]§t¼Ä¾÷ ´NÃz¬µ
+            //print("ç¢°æ’:" +collision.gameObject);
+            //å¦‚æœ ç¢°åˆ°ç‰©ä»¶çš„åç¨± åŒ…å«æ•µæ©Ÿ å°±çˆ†ç‚¸
             if (collision.gameObject.name.Contains(nameTarget))
             {
                 Instantiate(prefabExplosion, transform.position, transform.rotation);
-                //Destroy §R°£
-                //gameObject ¦¹ª«¥ó
+                //Destroy åˆªé™¤
+                //gameObject æ­¤ç‰©ä»¶
                 Destroy(gameObject);
             }
         }
-        // ¸I¼²Â÷¶}¨Æ¥ó ¤@¦¸
+        // ç¢°æ’é›¢é–‹äº‹ä»¶ ä¸€æ¬¡
         private void OnCollisionExit2D(Collision2D collision)
         {
             
         }
-        //¸I¼²«ùÄò¨Æ¥ó
+        //ç¢°æ’æŒçºŒäº‹ä»¶
         private void OnCollisionStay2D(Collision2D collision)
         {
             
