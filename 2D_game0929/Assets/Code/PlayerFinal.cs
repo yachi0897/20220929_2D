@@ -1,24 +1,24 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 
 
 namespace FOX
 {
     /// <summary>
-    /// ª±®aµ²§ôºŞ²z :¦º¤`©Î³qÃö
+    /// ç©å®¶çµæŸç®¡ç† :æ­»äº¡æˆ–é€šé—œ
     /// </summary>
     public class PlayerFinal : MonoBehaviour
     {
-        //³Q§R°£®É·|°õ¦æ¤@¦¸
+        //è¢«åˆªé™¤æ™‚æœƒåŸ·è¡Œä¸€æ¬¡
         private void OnDestroy()
         {
-            //¦º¤`
-            Fox.FinalManager.instance.GameOver("¬D¾Ô¥¢±Ñ!");
+            //æ­»äº¡
+            Fox.FinalManager.instance.GameOver("æŒ‘æˆ°å¤±æ•—!");
         }
-        //¸I¨ì¤Ä¿ï Is Trigger ª«¥ó®É·|°õ¦æ¤@¦¸
+        //ç¢°åˆ°å‹¾é¸ Is Trigger ç‰©ä»¶æ™‚æœƒåŸ·è¡Œä¸€æ¬¡
         private void OnTriggerEnter2D(Collider2D collision)
         {
-            //¹LÃö
-            Fox.FinalManager.instance.GameOver("¹CÀ¸³q¹L");
+            //éé—œ
+            Fox.FinalManager.instance.GameOver("éŠæˆ²é€šé");
         }
     }
 

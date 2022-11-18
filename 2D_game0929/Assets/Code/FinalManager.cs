@@ -1,6 +1,7 @@
 ﻿using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using System.Collections;
 namespace Fox
 {
@@ -32,6 +33,7 @@ namespace Fox
             groupFinal=GameObject.Find("結束畫布").GetComponent<CanvasGroup>();
             textTitle = GameObject.Find("結束標題").GetComponent<TextMeshProUGUI>();
             btnReplay = GameObject.Find("重新遊戲").GetComponent<Button>();
+            btnReplay.onClick.AddListener(Replay);
         }
         /// <summary>
         /// 遊戲結束
@@ -47,7 +49,7 @@ namespace Fox
         /// <summary>
         /// 淡入
         /// </summary>
-        
+
         private IEnumerator FadeIn()
         {
             for (int i = 0; i < 10; i++)
@@ -58,6 +60,16 @@ namespace Fox
             groupFinal.interactable = true;
             groupFinal.blocksRaycasts = true;
         }
+            ///<summary>
+            ///重新遊戲
+            ///<summary>
+            private void Replay ()
+            {
+                SceneManager.LoadScene("start");
+            }
+
+
+        
     }
 }
 
