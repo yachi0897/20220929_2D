@@ -12,7 +12,7 @@ namespace FOX
         private void OnDestroy()
         {
             //死亡
-            Fox.FinalManager.instance.GameOver("挑戰失敗!");
+            Fox.FinalManager.instance.GameOver("Youdie");
         }
         //碰到勾選 Is Trigger 物件時會執行一次
         private void OnTriggerEnter2D(Collider2D collision)
